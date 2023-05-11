@@ -1,0 +1,25 @@
+\documentclass[a4paper]{jsarticle}
+
+\usepackage{geometry}
+\geometry{left=25mm,right=25mm,top=25mm,bottom=30mm}
+
+\newcommand{\issueDate}{\today}
+\newcommand{\heading}{タイトル}
+\newcommand{\toAddress}{宛先住所}
+\newcommand{\fromAddress}{差出人住所}
+\newcommand{\contents}{内容}
+
+\input{contents.tex} % このファイルに上記の内容を記述する
+
+\pagestyle{empty}
+
+\begin{document}
+\begin{flushright}\issueDate\end{flushright}
+\begin{flushleft}\toAddress\end{flushleft}
+\begin{flushright}\fromAddress\end{flushright}
+\vspace{25pt}
+\begin{center}\bfseries\Large\heading\end{center}
+\vspace{25pt}
+\par
+\contents
+\end{document}
