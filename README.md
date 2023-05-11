@@ -1,5 +1,17 @@
 # 送付状 TeX テンプレート
 
+## 依存環境
+TeX Live が入っていれば問題なく動作するはずです．
+
+### ドキュメントクラス
+* jsclasses
+    * platex
+    * dvipdfmx
+
+### パッケージ
+* geometry
+* latexmk
+
 ## 使い方
 
 1. `contents.tex` を編集する
