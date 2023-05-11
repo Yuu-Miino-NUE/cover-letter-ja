@@ -3,11 +3,15 @@
 \usepackage{geometry}
 \geometry{left=25mm,right=25mm,top=25mm,bottom=30mm}
 
+\newenvironment{encl}{\bigbreak\begin{center}記\begin{enumerate}}{\end{enumerate}\end{center}\hfill 以上}
+
+% 以下は編集しない
 \newcommand{\issueDate}{\today}
-\newcommand{\heading}{タイトル}
+\newcommand{\subject}{件名}
 \newcommand{\toAddress}{宛先住所}
 \newcommand{\fromAddress}{差出人住所}
-\newcommand{\contents}{内容}
+\newcommand{\body}{本文}
+% 以上
 
 \input{contents.tex} % このファイルに上記の内容を記述する
 
@@ -18,8 +22,8 @@
 \begin{flushleft}\toAddress\end{flushleft}
 \begin{flushright}\fromAddress\end{flushright}
 \vspace{25pt}
-\begin{center}\bfseries\Large\heading\end{center}
+\begin{center}\bfseries\Large\subject\end{center}
 \vspace{25pt}
 \par
-\contents
+\body
 \end{document}
